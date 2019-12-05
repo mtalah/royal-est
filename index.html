@@ -1,0 +1,64 @@
+<! DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" lang="fr">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script type="text/java" src="script%20.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="index.html"><img id="logo" src="img/logo.png"></a>
+            </div>
+            <div id="menu_RS">
+                <div id="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="menu.html">Menus</a></li>
+                    <li><a href="https://www.facebook.com/pg/royalestmusic/events/?ref=page_internal">Soirée</a></li>
+                </ul>
+                </div>
+                <div>
+                <a href="https://www.facebook.com/royalestmusic/"><img class="RS" id="RSF" src="img/Logo-Facebook.png"></a>
+                
+                <a href="#"><img class="RS" id="RSI" src="img/logo_instagram.png"></a>
+                
+                <a href="#"><img class="RS" src="img/logo-youtub.png"></a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="diapo">
+            <div class="slideshow">
+	           <ul>
+                    <li><img src="img/fond.jpg" alt=""/></li>
+                    <li><img src="img/cmwugcyecr7jbyhbhaml.jpg" alt=""/></li>
+                    <li><img src="img/le-royal-est-vue-de-la-salle-c6cb5.webp" alt=""/></li>
+	           </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+ 
+        <script type="text/javascript">
+           $(function(){
+              setInterval(function(){
+                 $(".slideshow ul").animate({marginLeft:-350},800,function(){
+                    $(this).css({marginLeft:0}).find("li:last").after($(this).find("li:first"));
+                 })
+              }, 3500);
+           });
+        </script>
+        
+        <footer class="footer">
+            <div class="footer1">
+                <a href="https://goo.gl/maps/NozvmARj7Gx2dWcT8"><p>129 Rue du Faubourg Saint-Martin, 75010 Paris</p></a>
+                
+                <a href="tel:+33146070500"> 01 46 07 05 00</a>
+            </div>
+        </footer>
+    </body>
+</html>
